@@ -43,19 +43,12 @@ public class Main {
 
             while (groupSizeCounter > 0 && !students.isEmpty()) {
 
-                //System.out.println("Gathering group ... ");
-                //System.out.println("Group Size Counter: " + groupSizeCounter);
-
                 randomNumber = (int) (Math.random() * students.size());
-                //System.out.println("Random Number: " + randomNumber);
 
                 group[groupSizeCounter-1] = students.remove(randomNumber);
 
-                //System.out.print("Group: ");
-                //printGroup(group);
-                //System.out.println();
-
                 groupSizeCounter--;
+
             }
 
             groups.add(group);
